@@ -1,7 +1,7 @@
 "use client";
 import { useWallet } from "@solana/wallet-adapter-react";
 import Image from "next/image";
-import { FaCheckCircle } from "react-icons/fa"; // Import the check circle icon
+import { FaCheckCircle } from "react-icons/fa";
 import HomeComponent from "./components/HomeComponent";
 
 export default function Home() {
@@ -15,14 +15,13 @@ export default function Home() {
           <Image
             src="/images/lot-pic-2.png"
             alt="Lottery"
-            width={700} // Adjusted width for the image
-            height={700} // Adjusted height for the image
-            layout="intrinsic" // Use intrinsic to maintain image ratio
+            width={700}
+            height={700}
+            layout="intrinsic"
           />
         </div>
       </div>
 
-      {/* Right Side: Text and Components */}
       <div className="flex-1 flex flex-col items-center justify-center p-8 gap-6 rounded-lg">
 
         <div className="flex flex-col gap-4 items-center text-center">
