@@ -3,6 +3,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
 import HomeComponent from "./components/HomeComponent";
+import { WalletButtonImport } from "./components/WalletContextProvider";
 
 export default function Home() {
   const { publicKey } = useWallet();
@@ -30,9 +31,7 @@ export default function Home() {
               <FaCheckCircle className="ml-2 text-green-500 text-xl rounded-full" />
             </h2>
           ) : (
-            <h2 className="text-xl font-semibold text-red-600">
-              Please connect your wallet to continue
-            </h2>
+            <WalletButtonImport />
           )}
         </div>
 
