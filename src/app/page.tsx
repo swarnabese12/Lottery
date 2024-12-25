@@ -9,7 +9,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 text-gray-100 flex">
-      {/* Left Side: Image */}
       <div className="flex-1 flex items-center justify-center">
         <div className="rounded-lg overflow-hidden shadow-md">
           <Image
